@@ -32,22 +32,8 @@ img{
 	margin-left: auto; /* centering the content we use margin-left and margin-right */
 	margin-right: auto;
 	position: relative;
+	overflow: hidden;
 	transition: transform 0.5s; /*flip the card */
 	transform-style: preserve-3d; /*if we remove this, the front and back will have the same content */
 }
 
-.card:hover .front-card{
-	transform: rotateY(180deg);
-}
-
-.front-card .back-card{
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	backface-visibility: hidden;
-}
-
-.back-card{
-	margin-left: auto; /* centering the content we use margin-left and margin-right */
-	margin-right: auto;
-}
